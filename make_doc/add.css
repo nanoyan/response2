@@ -1,0 +1,17 @@
+#operations {
+	display: none;
+}
+
+.sidebar--content > ul > li:nth-child(2) {
+	display: none;
+}
+
+.sidebar {
+	display: none;
+}
+
+.aui-root .block {
+	display: block;
+}
+
+
