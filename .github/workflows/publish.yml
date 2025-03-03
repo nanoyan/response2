@@ -2,10 +2,10 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 name: Generate Html und Publish
 
@@ -27,7 +27,7 @@ jobs:
           git config --global user.email "yan.ping.chen.lin@iqb.hu-berlin.de"
           git config --global user.name "Yan Ping Chen Lin"
           git checkout gh-pages
-          git reset --hard main
+          git reset --hard master
       - name: Run html generation
         run: |
           npm ci
@@ -38,5 +38,4 @@ jobs:
           git add docs
           git commit -m "update gh-pages"
           git push -f
-        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
