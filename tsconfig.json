@@ -14,5 +14,6 @@
     "rootDir": "."
   },
   "include": ["*.interface.ts"],
-  "exclude": ["test.ts", "dist","public"]
+  "exclude": ["test.ts", "dist","public"],
+  "config": {"show":{"sidebar":false}}
 }

@@ -6,12 +6,11 @@
 	display: none;
 }
 
-.sidebar {
+.panel--right.absolute.top-0.right-0.h-full.bg-gray-800 {
 	display: none;
+	background-color: white;
 }
 
-.aui-root .block {
+.rounded.p-4.py-2.border.bg-gray-100.hidden {
 	display: block;
 }
-
-
